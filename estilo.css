@@ -1,0 +1,229 @@
+/*
+*
+*@author Rafael Henriques
+*Versão de estudo
+*/
+
+/* ====================== Layout ====================== */
+html, body, .capa{
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+    background: url('img/capa.png'), 
+                url('img/ruido.png'),
+                linear-gradient(50deg,#ff4169 0, #7c26f8 );
+    background-attachment: fixed;
+    font-family: Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* -- Barra de navegação -- */
+.img-logo {
+    height: 40px;
+    width: 160px;
+    display: block;
+    background: url('img/spotify.svg') no-repeat;
+    background-size: contain;
+    color: transparent;
+    
+}
+
+nav.navbar-transparente{
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+}
+
+a.navbar-brand{
+    padding: 5px 15px;
+}
+  
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 17px 10px;
+}
+
+#cor, footer .nav a{
+    color: white;
+}
+
+#cor:hover, footer .nav a:hover {
+    color: #6bf0e1;
+}
+
+footer .nav .cor-rodape:hover{
+    background: none;
+}
+/* ====================== Imagem e estrutura da capa ====================== */
+.capa{
+    display: table;
+    width: 100%;
+}
+
+.texto-capa{
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* ====================== Botões ====================== */
+.capa .texto-capa .btn-custom{
+    border-radius: 500px;
+    color: white;
+    -webkit-border-radius:500px;
+    -moz-border-radius:500px;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
+
+}
+
+.capa .texto-capa .btn-roxo{
+    background: #7c25f8;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+}
+
+.capa .texto-capa .btn-roxo:hover{
+    
+    background: #6207e3;
+    
+}
+
+.capa .texto-capa .btn-branco{
+    border: 2.5px solid white;
+}
+
+.capa .texto-capa .btn-branco:hover {
+    color: black;
+    background: white;
+}
+
+
+/* ====================== seção serviços ====================== */
+#servicos{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.albuns{
+    padding: 10px 0 10px 0px;
+}
+
+/* ====================== Recursos ====================== */
+#recursos{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rotacionar{
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /*Chrome, Safari, Opera */
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+/* ====================== Roda Pé ====================== */
+#rodape{
+    background: #000;
+    padding: 50px 0px 50px 50px;
+    position: relative;
+}
+
+#rodape h3{
+    color: #919496;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+footer .nav .img-rodape{
+    float: right;
+}
+
+.rede-social{
+    float: right;
+}
+
+/* ====================== Tipografia ====================== */
+.capa .texto-capa h1 {
+   font-weight: 900px;
+   letter-spacing: -0.05em;
+   margin-bottom: 50px;
+}
+
+/* Media queries */
+/* xs < 768 */
+@media screen and (max-width: 767px){
+    .capa .texto-capa h1 {
+        font-size: 50px;
+    }
+    .capa .texto-capa .btn-custom {
+        margin:10px 15px
+    }
+}
+
+/*sm*/
+@media screen and (min-width: 768px){
+    .capa .texto-capa h1{
+        font-size: 70px;
+    }
+
+}
+
+/*md*/
+@media screen and (min-width: 992px){
+    .capa .texto-capa h1{
+        font-size: 80px;
+    }
+    
+}
+
+/*lg*/
+@media screen and (min-width: 1200px){
+    .capa .texto-capa h1{
+        font-size: 100px;
+    }
+    
+}
+.col-md-6 h2{
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.col-md-6 h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#servicos h2{
+    color: #7c25f8;
+}
+
+#servicos h3{
+    color: #7c25f8;
+}
+
+#recursos h2{
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#recursos h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: #9bf0e1
+}
+
+
